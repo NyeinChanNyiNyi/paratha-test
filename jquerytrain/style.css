@@ -1,0 +1,176 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+#home {
+  background-color: #00af91;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  width: 100%;
+}
+
+.navlinks ul li {
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  /* background-color: black; */
+  border-radius: 50px;
+}
+
+.navlinks ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  top: 19%;
+}
+
+.navlinks ul li:hover {
+  background-color: #f58634;
+  transition: 1s;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+}
+
+.photosec {
+  width: 50%;
+}
+
+.photosec img {
+  width: 80%;
+}
+
+.text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.btnparent {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderbtn {
+  /* position: absolute;
+  top:60%;
+  left: 70%; */
+  border: 1.5px solid white;
+  color: white;
+  padding: 13px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+}
+
+.orderbtn:hover {
+  background-color: #f58634;
+  transition: 1s;
+  border: #f58634;
+}
+
+.orderbtn {
+  width: 10vw;
+  margin: 3% auto;
+}
+
+/* media quries */
+
+@media (min-width: 700px) {
+  .menubar,
+  .fa-times {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+  .photosec {
+    width: 100%;
+  }
+  .photosec img {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .orderbtn {
+    width: 100%;
+    text-align: center;
+    padding: 1.5%;
+  }
+  .logo {
+    font-size: 23px;
+    width: 80%;
+  }
+  .navlinks {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 80%;
+    right: -100vw;
+    text-align: center;
+    padding: 3%;
+    background-color: #f58634;
+    z-index: 2;
+    transition: 1s;
+  }
+  .navlinks ul li {
+    display: block;
+    padding: 8%;
+  }
+
+  .fa-times,
+  .menubar {
+    position: absolute;
+    top: 3%;
+    right: 15vw;
+    color: white;
+    font-weight: bold;
+  }
+
+  .menubar {
+    top: 1%;
+    right: 10vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .orderbtn {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .orderbtn {
+    width: 30%;
+    margin: 3% auto;
+    text-align: center;
+  }
+}
+
+/* media quries */
